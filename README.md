@@ -19,6 +19,8 @@ Step 8: Weighted Image call
 
 ![picture](allImages.png)
 
+Video : https://youtu.be/t17Ipcr8XU4
+
 After testing with the images, tested with VIDEO file and it looked good for the submission. I could think of improving it later to find the min/max in the list of vertices collected in hugh transformation 2 with that I will be able to remove some assumptions of fixed pixels with respect to X along max left lane and min right lane. I could also use/reactive the interpolation code that I orignally submitted.
 
 2 functions for drawline
