@@ -1,23 +1,29 @@
 ## Self driving car - Lane Marking
 ## My pipeline discussion 
+
 Step 1: Converted the images to grayscale
+
 Step 2: Did the Gaussian Blur
+
 Step 3: Canny 
+
 Step 4: Hough Line : It is important to look at min_line_length/max_line_gap
+
 Step 5: Region of Interest selection
+
 Step 6: Canny again
+
 Step 7: Hough Lines again ( this is done to collect vertices in limited scope and do a min/max function)
+
 Step 8: Weighted Image call
+
 ![picture](allimages.png)
 
-After testing with the images, tested with VIDEO file and it looked good.
-Worked on the interpolation code
-After testing with the images, it comes out with some lines which are not intentional. 
-Also running in video it is not smooth. I need to keep working on this and see what is causing extra lines.
+After testing with the images, tested with VIDEO file and it looked good for the submission. I could think of improving it later to find the min/max in the list of vertices collected in hugh transformation 2 with that I will be able to remove some assumptions of fixed pixels with respect to X along max left lane and min right lane. I could also use/reactive the interpolation code that I orignally submitted.
 
 2 functions for drawline
-1. drawline : This is currently used . It has some extra lines.
-2. drawline1 : This can be used to see data without extrapolating. It looks cool.
+1. draw_line : This is currently used . It has some extra lines.
+2. draw2_line : calculates min/max and plot lines
 
 ## Few possible shortcomings
 	1. I have used fixed values for extrapolating, trying to fit the line on curve will be an issue
